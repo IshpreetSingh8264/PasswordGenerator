@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+    /* Primary accent color */
+}
+
+.options {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+    /* Lighter text color */
+}
+
+input[type="number"],
+select,
+button {
+    margin-bottom: 12px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    /* Adjusting for padding */
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#password {
+    margin-top: 12px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+    font-size: 14px;
+}
+
+.strength {
+    margin-top: 12px;
+    color: #ccc;
+    /* Lighter text color */
+}
+
+#strength-meter {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #555;
+    overflow: hidden;
+    /* Ensures children don't exceed height */
+}
+
+#strength-meter.low {
+    background-color: #dc3545;
+}
+
+#strength-meter.medium {
+    background-color: #ffc107;
+}
+
+#strength-meter.high {
+    background-color: #28a745;
+}
